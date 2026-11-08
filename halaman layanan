@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan — ArchiDesign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0F172A',
+                        primary: '#1A1A2E',
+                        accent: '#C89563',
+                        light: '#F8F8F8',
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+    </style>
+</head>
+<body class="bg-light text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-primary/95 py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-white text-2xl font-display font-bold">ARCHI<span class="text-accent">DESIGN</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-accent">Beranda</a>
+                    <a href="about.html" class="text-white hover:text-accent">Tentang</a>
+                    <a href="services.html" class="text-accent">Layanan</a>
+                    <a href="projects.html" class="text-white hover:text-accent">Proyek</a>
+                    <a href="team.html" class="text-white hover:text-accent">Tim</a>
+                    <a href="blog.html" class="text-white hover:text-accent">Blog</a>
+                    <a href="contact.html" class="bg-accent text-white px-5 py-2 hover:bg-accent/90">Kontak</a>
+                </div>
+                <button class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-36 pb-20 bg-primary text-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Layanan Kami</h1>
+            <p class="text-gray-400">Beranda / Layanan Kami</p>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-accent font-medium">Apa yang Kami Tawarkan</span>
+                <h2 class="font-display text-3xl font-bold mt-2">Layanan Lengkap untuk Kebutuhan Bangunan Anda</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div class="bg-white p-8 shadow-sm service-card">
+                    <div class="w-16 h-16 bg-accent/10 flex items-center justify-center text-accent text-2xl mb-6">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Desain Rumah Tinggal</h3>
+                    <p class="text-gray-600 mb-4">Perencanaan desain rumah dari konsep hingga gambar kerja lengkap
